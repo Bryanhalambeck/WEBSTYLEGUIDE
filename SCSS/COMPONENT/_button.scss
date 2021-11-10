@@ -1,0 +1,43 @@
+/* ============================================= */
+  /*              Buttons                          */
+  /* ============================================= */
+  
+  @import "../UTILITIES/mixins" ;
+  @import "../UTILITIES/variables" ;
+
+
+  .btn {
+    @include click;
+    margin-top: 15px;
+    color: $color8;
+    border: none;
+    text-transform: uppercase;
+    @media (min-width:$minwidth ) {
+        padding: 10px 30px;
+      }
+      
+  }
+  
+  .default {
+    background-color: $colorsecondary;
+  }
+  
+  .error {
+    background-color: $color4;
+  }
+  
+  .info {
+    background-color: $color6;
+  }
+  
+  .success {
+    background-color: $color3;
+  }
+  
+  .warning {
+    background-color: $color5;
+  }
+
+
+
+  

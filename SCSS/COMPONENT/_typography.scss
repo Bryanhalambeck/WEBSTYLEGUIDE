@@ -1,0 +1,43 @@
+/* ============================================= */
+  /*              Typography                       */
+  /* ============================================= */
+  
+   
+  .headline-primary {
+    color: $colorprimary;
+    margin-left: 10px;
+  }
+  
+  .headline-secondary {
+    font-weight: $lighter;
+    color: $color7;
+  }
+  
+  .link {
+    color: $colorsecondary;
+    font-weight: $heavier;
+  }
+  
+  .blockquote {
+    font-size: 1.5em;
+    font-weight: $lighter;
+    font-style: italic;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 8px solid $colorprimary;
+    border-radius: 5px;
+  }
+
+  * {
+    font-family: $fontstackprimary;
+    color: $color7;
+    box-sizing: border-box;
+  }
+  
+  p {
+    line-height: 1.45em;
+  }
+  
+  a {
+    text-decoration: none;
+  }

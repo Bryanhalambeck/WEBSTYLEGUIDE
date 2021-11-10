@@ -1,0 +1,37 @@
+/* ============================================= */
+  /*              Navigation                       */
+  /* ============================================= */
+  
+   @import "../UTILITIES/mixins" ;
+
+   
+
+  .nav {
+    padding-left: 0;
+    flex-basis: $full;
+    @include column;
+    @media (min-width:$minwidth ) {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      
+  }
+  
+  .nav-link {
+      @include click;
+    text-align: center;
+    display: block;
+      transition: 
+      background-color .2s ease-in-out, 
+      color .2s ease-in-out;
+      @media (min-width:$minwidth ) {
+        flex-basis: 100px;
+      }
+  }
+  
+  .nav-link:hover {
+    color: $color8;
+    background-color: $colorprimary;
+  }

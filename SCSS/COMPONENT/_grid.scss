@@ -1,0 +1,119 @@
+/* ============================================= */
+  /*              Grid System                      */
+  /* ============================================= */
+  
+  @import "../UTILITIES/mixins" ;
+
+  .container {
+    padding: 0 10px;
+    @media (min-width:$minwidth ) 
+     {
+        @include display;
+        max-width: 1400px;
+        
+      }
+  }
+  
+  .row {
+    @include column;
+    padding: 1em 10px;
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    flex-basis: 100%;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .col-1.theme {
+    background-color: $color6;
+    @media (min-width:$minwidth )
+    { flex-basis: 8.33%;
+      }
+  }
+  
+  .col-2.theme {
+    background-color: $color5;
+    @media (min-width:$minwidth ) {
+        flex-basis: 16.67%;
+    }
+     }   
+    
+  
+  
+  .col-3.theme {
+    background-color: $color9;
+    @media (min-width:$minwidth ) {
+        flex-basis: 25.00%;
+    }
+  }
+  
+  .col-4.theme {
+    background-color: $color10;
+    @media (min-width:$minwidth ) {
+    flex-basis: 33.33%;
+  }
+  }
+  
+  .col-5.theme {
+    background-color: $color10;
+    @media (min-width:$minwidth ) {
+    flex-basis: 41.67%;
+  }
+   } 
+  
+  .col-6.theme {
+    background-color: $color11;
+    @media (min-width:$minwidth ) {
+    flex-basis: 50.00%;
+  }
+   }
+  
+  .col-7.theme {
+    background-color: $color12;
+    @media (min-width:$minwidth ) {
+    flex-basis: 58.33%;
+  }
+   }
+  
+  .col-8.theme {
+    background-color: $color13;
+    @media (min-width:$minwidth ) {
+    flex-basis: 66.67%;
+  }
+  }
+  
+  .col-9.theme {
+    background-color: $color4;
+    @media (min-width:$minwidth ) {
+    flex-basis: 75.00%
+  }
+  }
+  
+  .col-10.theme {
+    background-color: $color3;
+    @media (min-width:$minwidth ) {
+    flex-basis: 83.33%;
+  }
+   }
+  
+  .col-11.theme {
+    background-color: $colorsecondary;
+    @media (min-width:$minwidth ) {
+    flex-basis: 91.67%;
+  }
+  }
+ 
+  .col-12.theme {
+    background-color: $color14;
+    @media (min-width:$minwidth ) {
+    flex-basis: $full;
+  }
+   }
+  
+  .card {
+    flex-basis: $full;
+   }
+  

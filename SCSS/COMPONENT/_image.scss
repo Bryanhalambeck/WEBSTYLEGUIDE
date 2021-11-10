@@ -1,0 +1,29 @@
+/* ============================================= */
+  /*              Images                           */
+  /* ============================================= */
+  
+
+  @import "../UTILITIES/mixins" ;
+
+  .img-avatar {
+      @include display;
+    margin-top: 10px;
+    max-width: $full; 
+    max-height: $full;
+  }
+  
+  .img-frame {
+      @include display;
+    margin-top: 10px;
+    max-width: $full;
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  
+  .img-logo {
+      @include display;
+    @media (min-width:$minwidth ) {
+     margin-left: initial;
+    margin-right: initial;
+    }
+    }
